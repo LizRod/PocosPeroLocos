@@ -1,0 +1,363 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+<script src="js/funciones.js" type="text/javascript">
+</script>
+</head> 
+<body> 
+
+<div data-role="page" id="Menu">
+	<div data-role="header">
+		<h1>Menu Principal</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#Historia" data-transition="flip"  >HISTORIA</a></li>
+            <li><a href="#Fotos" data-transition="flip" > FOTOS</a></li>
+			<li><a href="#Aventuras" data-transition="flip">AVENTURAS</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Pie de página</h4>
+        <div data-role="navbar" data-iconpos="top">
+        <ul>
+        <li>
+        
+          <a href="#Menu" data-transition="slide" data-icon="home">
+          Inicio
+          </a>
+         </li>
+           <li>
+          <a href="#ayuda" data-transition="slide" data-icon="info">
+          Ayuda
+          </a>
+         </li>
+          <li>
+          <a href="#contacto" data-transition="slide" data-icon="alert">
+          Contacto
+          </a>
+         </li>
+         </ul>
+       </div> 
+        
+	</div>
+</div>
+
+<div data-role="page" id="Historia">
+	<div data-role="header">
+   
+     <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> BACK </a>
+		<h1>Página dos</h1>
+	</div>
+    
+	<div data-role="content" align="center">	
+			<center>
+        <a href="#te" data-rel="popup" data-position-to="window">
+    <img src="Imagenes/te.jpg" alt="kp" style="width:100px";></a>
+    
+    
+    <div data-role="popup" id="te">
+     <p>¡:3!</p>
+     <a href="#te" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <img src="Imagenes/te.jpg" style="width:800px;height:600px;" alt="kp"> </div>
+     <p>
+   	
+	hola les vamos a relatar la historia de 7 amigos y un colado :3
+        jejeje mentira de
+         8 amigos no es ningun colado nos conocimos 
+        hace ya apoximadamente unos 2 años pero empezamos a compartir 
+        amistad hace poco
+        <p>
+        
+   <table width="200" border="1">
+  <tr bgcolor="#FF0066">>
+    <td>NOMBRE</td>
+    <td>DEPORTE</td>
+    <td>ESTADO CIVIL</td>
+  </tr>
+  <tr bgcolor="#33CC33">>
+    <td>Laisha Ivett Rojas Hernandez</td>
+    <td>Baloncesto</td>
+    <td>Soltera</td>
+  </tr>
+  <tr bgcolor="#FF66FF">>
+    <td>Patricial Salazar Vede</td>
+    <td>Futbol</td>
+    <td>En una relacion</td>
+  </tr>
+  <tr bgcolor="#FFFF00">>
+    <td>Lizzet Rodrigez Rosales </td>
+    <td>Baloncesto</td>
+    <td>Relacion abierta </td>
+  </tr>
+  <tr bgcolor="#330033" >
+    <td>Armando</td>
+    <td>Baloncesto</td>
+    <td>Soltero</td>
+  </tr>
+  <tr bgcolor="#99FF33">
+    <td>Leticia Flores Lucas </td>
+    <td>Baile</td>
+    <td>En una relacion</td>
+  </tr>
+  <tr bgcolor="#000099">
+    <td>yazmin Zaragoza Damas</td>
+    <td>Ballet</td>
+    <td>Union libre </td>
+  </tr>
+  <tr bgcolor="#FF0033">
+    <td>Marco Antonio Garcia Ugarte</td>
+    <td>futbol</td>
+    <td>Dejado</td>
+  </tr>
+  <tr bgcolor="#FF0000">
+    <td>Alma Carolina Martinez Cruz</td>
+    <td>Voleibol</td>
+    <td>Union libre </td>
+  </tr>
+</table>
+        
+        
+        </center>
+        
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Pie de página</h4>
+        
+         <div data-role="navbar" data-iconpos="top">
+        <ul>
+        <li>
+        
+          <a href="#Menu" data-transition="slide" data-icon="home">
+          Inicio
+          </a>
+         </li>
+           <li>
+          <a href="#ayuda" data-transition="slide" data-icon="info">
+          Ayuda
+          </a>
+         </li>
+          <li>
+          <a href="#contacto" data-transition="slide" data-icon="alert">
+          Contacto
+          </a>
+         </li>
+         </ul>
+       </div> 
+        
+        
+	</div>
+</div>
+
+<div data-role="page" id="Fotos">
+	<div data-role="header">
+     <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> Atrás  </a>
+		<h1>Página tres</h1>
+	</div>
+    
+    <center>
+	<div data-role="content">
+    <p> Desliza sobre el cuadro de texto. </p>
+     <p Style="border:1px solid black;height:200px;width:200px;"></p>
+     <p><span style="color:red"></span></p>	
+     
+    	<p>las chicas del coro</p><br>
+		<a href="#nombre" data-rel="popup" data-position-to="window">
+<img src="imagenes/nombre.jpg" alt="Skaret View" style="width:100px;"></a>
+
+<div data-role="popup" id="nombre">
+      <p>:D</p> 
+      <a href="#nombre" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagenes/nombre.jpg" style="width:800px;height:500px;" alt="Skaret View">
+    </div>
+    <br>
+    
+    
+    
+    <p>Semestre pasado en la clase de Calixto</p><br>
+  <a href="#armando" data-rel="popup" data-position-to="window">
+<img src="imagenes/armando.jpg" alt="Skaret Vie" style="width:100px;"></a>
+
+<div data-role="popup" id="armando">
+      <p>Este es el modelo NIKE ZOOM!!!!!</p> 
+      <a href="#armando" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagenes/armando.jpg" style="width:800px;height:500px;" alt="Skaret Vie">
+    </div>
+    
+     <p>Ora el america</p><br>
+<a href="#tes" data-rel="popup" data-position-to="window">
+<img src="imagenes/te.jpg" alt="Skaret Vi" style="width:100px;"></a>
+
+<div data-role="popup" id="tes">
+      <p>6 feas y un Dejado.</p> 
+      <a href="#tes" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagenes/te.jpg" style="width:800px;height:500px;" alt="Skaret Vi">
+    </div>
+        		
+	</div>
+    </center>
+	<div data-role="footer" data-position="fixed">
+		<h4>Pie de página</h4>
+        
+         <div data-role="navbar" data-iconpos="top">
+        <ul>
+        <li>
+        
+          <a href="#Menu" data-transition="slide" data-icon="home">
+          Inicio
+          </a>
+         </li>
+           <li>
+          <a href="#ayuda" data-transition="slide" data-icon="info">
+          Ayuda
+          </a>
+         </li>
+          <li>
+          <a href="#contacto" data-transition="slide" data-icon="alert">
+          Contacto
+          </a>
+         </li>
+         </ul>
+       </div> 
+        
+	</div>
+</div>
+
+<div data-role="page" id="Aventuras">
+	<div data-role="header">
+    <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back"> Atrás  </a>
+		<h1>Página cuatro</h1>
+	</div>
+    <center>
+	<div data-role="content">
+      <p>En el cumple!!!</p><br>
+<a href="#cumple" data-rel="popup" data-position-to="window">
+<img src="imagenes/cumple.jpg" alt="Skaret v" style="width:100px;"></a>
+
+<div data-role="popup" id="cumple">
+      <p>ahí todavia no era dejado...</p> 
+      <a href="#cumple" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagenes/cumple.jpg" style="width:800px;height:500px;" alt="Skaret v">
+    </div>
+
+
+<br>------------------------------------------------------------------- 
+
+  <p>En el cumpl!! :D</p><br>
+<a href="#el" data-rel="popup" data-position-to="window">
+<img src="imagenes/el.jpg" alt="Skaret " style="width:100px;"></a>
+
+<div data-role="popup" id="el">
+      <p>El más guapo y papichurri cumple años <3</p> 
+      <a href="#el" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagenes/el.jpg" style="width:800px;height:500px;" alt="Skaret ">
+    </div>
+
+<br>-----------------------------------------------------------------------
+  <p>Chismeando!!!</p><br>
+<a href="#ellas" data-rel="popup" data-position-to="window">
+<img src="imagenes/ellas.jpg" alt="Skare" style="width:100px;"></a>
+
+<div data-role="popup" id="ellas">
+      <p>amigas jajajaa</p> 
+      <a href="#ellas" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagenes/ellas.jpg" style="width:800px;height:500px;" alt="Skare">
+    </div>
+<br>-------------------------------------------------------------------------
+  <p>Con el colado!! :D</p><br>
+<a href="#ellos" data-rel="popup" data-position-to="window">
+<img src="imagenes/ellos.jpg" alt="Skare" style="width:100px;"></a>
+
+<div data-role="popup" id="ellos">
+      <p>yaz, yuki, armando .-.</p> 
+      <a href="#ellos" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagenes/ellos.jpg" style="width:800px;height:500px;" alt="Skare">
+    </div>
+<br>---------------------------------------------------------------------
+  <p>El colado no se deja sacr foto </p><br>
+<a href="#lety" data-rel="popup" data-position-to="window">
+<img src="imagenes/lety.jpg" alt="Skare" style="width:100px;"></a>
+
+<div data-role="popup" id="lety">
+      <p>foto pál face... armando es penoso</p> 
+      <a href="#lety" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagenes/lety.jpg" style="width:800px;height:500px;" alt="Skare">
+    </div>
+<br>----------------------------------------------------------------------------
+  <p>Otra vez yo..!! :P<br></p><br>
+<a href="#liz" data-rel="popup" data-position-to="window">
+<img src="imagenes/liz.jpg" alt="Skar" style="width:100px;"></a>
+
+<div data-role="popup" id="liz">
+      <p>con la poste jr. jajajaja</p> 
+      <a href="#liz" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a 
+ui-icon-delete ui-btn-icon-notext ui-btn-right">Close
+</a><img src="imagenes/liz.jpg" style="width:800px;height:500px;" alt="Skar">
+    </div>
+        
+        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Pie de página</h4>
+        
+         <div data-role="navbar" data-iconpos="top">
+        <ul>
+        <li>
+        
+          <a href="#Menu" data-transition="slide" data-icon="home">
+          Inicio
+          </a>
+         </li>
+           <li>
+          <a href="#ayuda" data-transition="slide" data-icon="info">
+          Ayuda
+          </a>
+         </li>
+          <li>
+          <a href="#contacto" data-transition="slide" data-icon="alert">
+          Contacto
+          </a>
+         </li>
+         </ul>
+       </div> 
+        
+	</div>
+</div>
+
+<div data-role="page" id="ayuda">
+  <div data-role="header">
+    <h1>Pagina de ayuda</h1>
+  </div>
+  <div data-role="content">Si no sirve esta aplicacion cierrela inmediatamemnte y evacue :O</div>
+  <div data-role="footer">
+    <h4>Pie</h4>
+  </div>
+</div>
+<div data-role="page" id="contacto">
+  <div data-role="header">
+    <h1>Pagina de contacto</h1>
+  </div>
+  <div data-role="content">2761113122 contactenos!</div>
+  <div data-role="footer">
+    <h4>Pie</h4>
+  </div>
+</div>
+
+</body>
+</html>
